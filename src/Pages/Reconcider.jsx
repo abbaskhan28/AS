@@ -87,8 +87,8 @@ function ReconsiderIllustration() {
 }
 
 export default function ReconsiderDialog({
-  title = "Ek aur baar soch lo!",
-  subtitle = "Kyu aisa kar rahi ho, plzz maan jao",
+  title = "Ek aur baar soch ly!",
+  subtitle = "Please man jay mera bach , plzz maan jay wifey",
   onYes = () => {},
   onNo = () => {},
 }) {

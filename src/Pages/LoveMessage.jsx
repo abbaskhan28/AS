@@ -133,7 +133,6 @@ const FLOATERS = [
   { left: 93, size: 15, delay: 3.5, duration: 7, emoji: "💗" },
 ];
 
-// Splits a headline into words, each fading/bouncing in with a stagger
 function AnimatedHeadline({ text, startDelay = 0.7, stagger = 0.09 }) {
   const words = text.split(" ");
   return (
@@ -159,7 +158,6 @@ function AnimatedHeadline({ text, startDelay = 0.7, stagger = 0.09 }) {
   );
 }
 
-// Splits the salutation into letters that pop in one by one
 function AnimatedSalutation({ text, startDelay = 1.4, stagger = 0.045 }) {
   const letters = text.split("");
   return (
@@ -180,7 +178,6 @@ function AnimatedSalutation({ text, startDelay = 1.4, stagger = 0.045 }) {
   );
 }
 
-// Reveals the note as if it's being handwritten, word by word
 function TypewriterNote({ text, startDelay = 2.2, stagger = 0.11 }) {
   const words = text.split(" ");
   return (
@@ -204,7 +201,7 @@ function TypewriterNote({ text, startDelay = 2.2, stagger = 0.11 }) {
 export default function YouLoveMePage({
   headline = "I knew it! You love me a lot",
   wifeName = "Mere Samia",
-  note = "Meri jan ma apky bagher ni reh sakta. Ap meri zindagi ma sabse zarori hn. Ap sy  meri har aik khushi ha. Ap meri Wifey hn jana or mere sab sy achi dost bhi hn jana meri partner hn jana , mera gulab hn mera munnah , mere rasmalai ha meri jan ,  mera sukoon hn yaram. Ap sy mere zindagi ha jana. Ap meri duao ma hoti hn mera bacha . Tum meri sabse badi umeed ho",
+  note = "Meri jan ma apky bagher ni reh sakta. Ap meri zindagi ma sabse zarori hn. Ap sy  meri har aik khushi ha. Ap meri Wifey hn jana or mere sab sy achi dost bhi hn jana meri partner hn jana , mera gulab hn mera munnah , mere rasmalai ha meri jan ,  mera sukoon hn yaram. Ap sy mere zindagi ha jana. Ap meri duao ma hoti hn mera bacha.",
 }) {
   const salutation = `Dear ${wifeName},`;
   const signOffDelay = 2.2 + note.split(" ").length * 0.11 + 0.3;

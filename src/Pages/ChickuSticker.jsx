@@ -110,15 +110,14 @@ export default function ChikuSticker({ onNoClick }) {
           touchAction: "none",
         }}
       >
-        {/* Chiku illustration (original artwork) */}
         <ShyCatIllustration />
 
-        {/* Text */}
         <h2 className="text-2xl font-bold text-gray-900">Do you love me? 🥰</h2>
 
-        <p className="mt-2 text-sm text-gray-500">Chiku is all yours</p>
+        <p className="mt-2 text-sm text-gray-500">
+          Abbas is all yours mera bacha{" "}
+        </p>
 
-        {/* Buttons */}
         <div className="mt-4 flex justify-center gap-4">
           <button
             type="button"

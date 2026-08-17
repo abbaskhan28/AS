@@ -1,6 +1,5 @@
 import { useRef, useState, useCallback } from "react";
 
-// Original illustration — two cuddling cats, drawn from scratch (no copyrighted assets).
 function CuddleIllustration() {
   return (
     <svg
@@ -107,16 +106,16 @@ function CuddleIllustration() {
   );
 }
 
-const BUTTON_W = 90; // approx button width in px, used to keep it inside viewport
+const BUTTON_W = 90;
 const BUTTON_H = 44;
-const DANGER_RADIUS = 90; // how close the mouse can get before the button runs
+const DANGER_RADIUS = 90;
 
 export default function BabyReconsiderDialog({
-  title = "Baby man jao na! Kitna bhav khaogi",
-  subtitle = "Bhut galat baat hai yrrr",
+  title = "Baby man jao na please mere Samia ",
+  subtitle = "Bhut galat hai yrrr mera munnnah",
   onYes = () => {},
 }) {
-  const [noPos, setNoPos] = useState(null); // null = still in normal flow
+  const [noPos, setNoPos] = useState(null);
   const noBtnRef = useRef(null);
 
   const moveNoButton = useCallback(() => {
